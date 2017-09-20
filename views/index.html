@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Crash Reporter Server</title>
+		<link rel="shortcut icon" href="https://assets-cdn.github.com/favicon.ico" type="image/x-icon"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<style type="text/css" media="screen">
+		a {
+			text-decoration: none;
+		}
+	</style>
+
+	<body>
+		<div class="columns" id="login-form">
+			<div class="column is-one-third is-offset-one-third">
+				<form method="POST" action="/dashboard">
+					<div class="field">
+						<p class="control has-icons-left has-icons-right">
+							<input name="username" class="input" type="text" placeholder="Username" required/>
+							<span class="icon is-small is-left">
+								<i class="fa fa-user"></i>
+							</span>
+						</p>
+					</div>
+					<div class="field">
+						<p class="control has-icons-left">
+							<input name="password" class="input" type="password" placeholder="Password" required/>
+							<span class="icon is-small is-left">
+								<i class="fa fa-lock"></i>
+							</span>
+						</p>
+						</div>
+						<div class="field">
+						<p class="control">
+							<button class="button is-success">
+								Login
+							</button>
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="content has-text-centered">
+					<p>
+						by <a href="https://github.com/marianoheller">Mariano Heller <i class="fa fa-github"></i></a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<script src="js/index.js"></script>
+	</body>
+</html>
